@@ -72,12 +72,21 @@ h1, h2, h3 {
 	margin: 15px 0;
 }
 /* BROWSE NOW */
-#browse-now div img {
+#browse-now a {
+	color: #4d4d4d;
+	text-decoration: none;
+}
+#browse-now a div:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: all 0.1s;
+}
+#browse-now a div img {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
 }
-#browse-now div h3 {
+#browse-now a div h3 {
 	margin: 15px 0;
 }
 /* FOOTER */
