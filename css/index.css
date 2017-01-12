@@ -51,6 +51,8 @@ h1, h2, h3 {
 }
 .header i {
 	margin-top: 100px;
+	color: #f1f1f1;
+	text-decoration: none;
 }
 /* FEATURES */
 #features {
@@ -76,17 +78,17 @@ h1, h2, h3 {
 	color: #4d4d4d;
 	text-decoration: none;
 }
-#browse-now a div:hover {
+#browse-now a:hover {
 	cursor: pointer;
 	transform: scale(1.1);
 	transition: all 0.1s;
 }
-#browse-now a div img {
+#browse-now a img {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
 }
-#browse-now a div h3 {
+#browse-now a h3 {
 	margin: 15px 0;
 }
 /* FOOTER */
