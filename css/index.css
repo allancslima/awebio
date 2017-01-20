@@ -1,4 +1,4 @@
-/* GENERAL */
+/* === GENERAL === */
 body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	color: #4d4d4d;
@@ -49,8 +49,11 @@ h1, h2, h3 {
 	padding: 10px;
 	border: 3px solid #ffffff;
 }
+.header p {
+	line-height: 1.5em;
+}
 .header i {
-	margin-top: 100px;
+	margin-top: 50px;
 	color: #f1f1f1;
 	text-decoration: none;
 }
@@ -58,6 +61,10 @@ h1, h2, h3 {
 #features {
 	background-color: #008b8b;
 	color: #f1f1f1;
+}
+#features p {
+	max-width: 1000px;
+	line-height: 1.5em;
 }
 #aspects {
 	width: 100%;
@@ -68,7 +75,7 @@ h1, h2, h3 {
 	height: 150px;
 	padding: 5px;
 	background-color: #ffffff;
-	border: 5px solid #cecece;
+	border: 5px solid #4d4d4d;
 }
 #aspects div h3 {
 	margin: 15px 0;
@@ -98,7 +105,7 @@ footer {
 	text-align: center;
 	color: #f1f1f1;
 }
-/* MEDIA QUERIES */
+/* === MEDIA QUERIES === */
 @media screen and (min-width: 768px) {
 	/* NAVIGATION */
 	.navigation {
@@ -111,16 +118,20 @@ footer {
 	}
 	/* HEADER */
 	.header {
-		height: 500px;
+		height: 550px;
 		justify-content: center;
+	}
+	.header i {
+		margin-top: 100px;
 	}
 	/* FEATURES  */
 	#features {
-		height: 600px;
+		height: 650px;
 		justify-content: center;
 	}
 	#aspects {
 		flex-direction: row;
+		align-items: flex-start;
 		justify-content: space-between;
 		max-width: 900px;
 		margin-top: 30px;
