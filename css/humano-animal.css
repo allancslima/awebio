@@ -1,0 +1,40 @@
+/* GENERAL */
+body {
+	background-color: #F6F6F6;
+}
+.navigation > a, .navigation ul li a {
+	color: #4d4d4d;
+}
+/* HEADERS */
+.puma-header {
+	height: 100px;
+	justify-content: center;
+}
+/* COLORS TOP */
+.puma-topbgcolor {
+	background-color: #f4eb49;
+}
+/* COMPARISON CONTENT */
+.comparison-content {
+	max-width: 1000px;
+	padding: 50px;
+	box-sizing: border-box;
+	background-color: #fff;
+	text-align: left;
+}
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+	/* HEADERS */
+	.puma-header {
+		height: 400px;
+	}
+	.puma-header h2 {
+		font-size: 2em;
+	}
+	/* COMPARISON CONTENT */
+	.comparison-content {
+		margin: 0 auto;
+		border: 1px solid #e8e8e8;
+		border-top: none;
+	}
+}
