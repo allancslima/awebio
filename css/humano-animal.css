@@ -3,14 +3,14 @@ body {
 	background-color: #F6F6F6;
 }
 .navigation > a, .navigation ul li a {
-	color: #4d4d4d;
+	color: #fff;
 }
 .btn {
 	display: inline-block;
 	padding: 20px;
-	background-color: #f4eb49;
+	background-color: #e5bb31;
 	text-decoration: none;
-	color: #4d4d4d;
+	color: #fff;
 	font-weight: 700;
 	border: 1px solid #e8e8e8;
 }
@@ -20,11 +20,12 @@ body {
 /* HEADERS */
 .puma-header {
 	height: 100px;
+	color: #fff;
 	justify-content: center;
 }
 /* COLORS TOP */
 .puma-topbgcolor {
-	background-color: #f4eb49;
+	background-color: #e5bb31;
 }
 /* COMPARISON CONTENT */
 .comparison-content {
