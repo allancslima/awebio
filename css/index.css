@@ -15,7 +15,7 @@ h1, h2, h3 {
 	text-align: center;
 	padding: 20px;
 }
-.main-topbgcolor {
+.bgcolor-main {
 	background-color: #008db1;
 }
 /* NAVIGATION */
@@ -43,17 +43,17 @@ h1, h2, h3 {
 	text-decoration: none;
 }
 /* HEADER */
-.main-header {
+.header-main {
 	color: #f1f1f1;
 }
-.main-header h1 {
+.header-main h1 {
 	padding: 10px;
 	border: 3px solid #ffffff;
 }
-.main-header p {
+.header-main p {
 	line-height: 1.5em;
 }
-.main-header i {
+.header-main i {
 	margin-top: 50px;
 	color: #f1f1f1;
 	text-decoration: none;
@@ -118,11 +118,11 @@ footer {
 		width: 70%;
 	}
 	/* HEADER */
-	.main-header {
+	.header-main {
 		height: 550px;
 		justify-content: center;
 	}
-	.main-header i {
+	.header-main i {
 		margin-top: 100px;
 	}
 	/* FEATURES  */
