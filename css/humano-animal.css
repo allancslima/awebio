@@ -37,11 +37,29 @@ body {
 .comparison-content p {
 	line-height: 1.5;
 }
+.map-bodyhuman {
+	max-width: 500px;
+	flex-direction: row;
+	align-items: flex-start;
+	padding-top: 50px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+.map-bodyhuman img {
+	margin: 0 auto 0;
+}
 /* MEDIA QUERIES */
 @media screen and (max-width: 353px) {
 	/* HEADERS */
 	.header-oncaparda h2 {
 		font-size: 1.3em;
+	}
+	/* COMPARISON CONTENT */
+	.map-bodyhuman {
+		flex-direction: column;
+	}
+	.map-bodyhuman img {
+		margin: 20px auto 0;
 	}
 }
 @media screen and (min-width: 768px) {
