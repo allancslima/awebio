@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>A W E B i o</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700">
+	<link rel="stylesheet" href="../css/normalize.min.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/humano-animal.css">
+	<style>
+		#board {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			max-width: 800px;
+			margin: 30px auto 0;
+			padding: 5px;
+			box-sizing: border-box;
+			border: 1px solid #000;
+		}
+		.card {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 130px;
+			height: 130px;
+			margin: 5px;
+			border: 1px solid #000;
+			cursor: pointer;
+			background-color: blue;
+		}
+		@media screen and (min-width: 768px) {
+			#board{
+				padding: 20px 0;
+			}
+			.card {
+				width: 180px;
+				height: 180px;
+				margin: 5px;
+				border: 1px solid #000;
+			}	
+		}
+	</style>
+</head>
+<body>
+	<nav class="container navigation bgcolor-oncaparda">
+		<a href="../index.html">A W E B i o</a>
+		<ul class="container">
+			<li><a href="../index.html">INÍCIO</a></li>
+			<li><a href="#">SOBRE</a></li>
+			<li><a href="#">PROJETO</a></li>
+		</ul>
+	</nav>
+
+	<section id="board">
+		
+	</section>
+
+	<script>
+		var card1 = {id: 1, text: "A"},
+			card2 = {id: 1, text: "A"},
+			card3 = {id: 2, text: "B"},
+			card4 = {id: 2, text: "B"},
+			card5 = {id: 3, text: "C"},
+			card6 = {id: 3, text: "C"},
+			card7 = {id: 4, text: "D"},
+			card8 = {id: 4, text: "D"},
+			card9 = {id: 5, text: "E"},
+			card10 = {id: 5, text: "E"},
+			card11 = {id: 6, text: "F"},
+			card12 = {id: 6, text: "F"};
+
+		var cards = [card1, card2, card3, card4, card5, card6, card7, card8, card9, card10, card11, card12];
+
+		Array.prototype.shuffleCards = function () {
+			var i = this.length, j, temp;
+        	while(--i > 0) {
+	            j = Math.floor(Math.random() * (i+1));
+	            temp = this[j];
+	            this[j] = this[i];
+	            this[i] = temp;
+	        }
+		}
+
+		var loadBoard = function () {
+			cards.shuffleCards();
+			var output = "";
+			for (var i=0; i < cards.length; i++) {
+				output += "<div class='card' id='card"+i+"' accessKey='"+ cards[i].id +"' onclick='flipCard(this, \""+ cards[i].text +"\")'></div>";
+			} 
+			document.getElementById("board").innerHTML = output;
+			cardsFlipped = 0;
+		}
+
+		var values = [], cardsId = [];
+		var cardsFlipped;
+
+		var flipCard = function (card, text) {
+			if (card.innerHTML == "" && values.length < 2) {
+				card.style.background = "#FFF";
+				card.innerHTML = text;
+
+				if(values.length === 0) {
+		            values.push(card.accessKey);
+		            cardsId.push(card.id);
+		        } else if(values.length === 1) {
+		            values.push(card.accessKey);
+		            cardsId.push(card.id);
+		            if(values[0] === values[1]) {
+		            	cardsFlipped += 2;
+
+		                values = [];
+		                cardsId = [];
+
+		                if (cardsFlipped == cards.length) {
+		                	alert("Congratulations");
+		                	document.getElementById("board").innerHTML = "";
+		                	loadBoard();
+		                }
+		            } else {
+		                function flipTwoBack() {
+		                    var card1 = document.getElementById(cardsId[0]);
+		                    var card2 = document.getElementById(cardsId[1]);
+		                    card1.innerHTML = "";
+		                    card1.style.background = "blue";
+		                    card2.innerHTML = "";
+		                    card2.style.background = "blue";
+		                    values = [];
+		                    cardsId = [];
+		                }
+		                setTimeout(flipTwoBack, 1000);
+		            }
+				}
+			}
+		}
+
+		loadBoard();
+	</script>
+</body>
+</html>

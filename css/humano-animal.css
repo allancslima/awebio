@@ -37,6 +37,22 @@ body {
 .comparison-content p {
 	line-height: 1.5;
 }
+/* INTRODUCTION */
+.introduction {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+}
+.introduction div:nth-child(1) {
+	width: 100%;
+}
+.introduction div:nth-child(2) {
+	width: 100%;
+}
+.introduction div:nth-child(2) img {
+	width: 100%;
+	max-width: 500px;
+}
 .map-bodyhuman {
 	max-width: 500px;
 	flex-direction: row;
@@ -73,6 +89,14 @@ body {
 	/* COMPARISON CONTENT */
 	.comparison-content {
 		margin: 0 auto;
+	}
+	/* INTRODUCTION */
+	.introduction {
+		display: flex;
+		flex-direction: row;
+	}
+	.introduction div:nth-child(1) {
+		padding-right: 20px;
 	}
 }
 @media screen and (min-width: 1000px) {
