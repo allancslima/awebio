@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 id="question"></h1>
+
+	<form id="form">
+		<input type="radio" name="answer" value="1" id="answer0"><span id="choice0"></span> </br>
+		<input type="radio" name="answer" value="2" id="answer1"><span id="choice1"></span> </br>
+		<input type="radio" name="answer" value="3" id="answer2"><span id="choice2"></span> </br>
+	</form>
+
+	<button onclick="next()">Próximo</button>
+
+	<script>
+		var question1 = {question: "Pergunta 1?", choices: ["Sim", "Não", "Talvez"], correctAnswer: 0},
+			question2 = {question: "Pergunta 2?", choices: ["Sim", "Não", "Talvez"], correctAnswer: 1},
+			question3 = {question: "Pergunta 3?", choices: ["Sim", "Não", "Talvez"], correctAnswer: 2},
+			question4 = {question: "Pergunta 4?", choices: ["Sim", "Não", "Talvez"], correctAnswer: 0},
+			question5 = {question: "Pergunta 5?", choices: ["Sim", "Não", "Talvez"], correctAnswer: 1};
+
+		var questions = [question1, question2, question3, question4, question5];
+
+		document.getElementById("choice0").textContent = questions[0].choices[0];
+		document.getElementById("choice1").textContent = questions[1].choices[1];
+		document.getElementById("choice2").textContent = questions[2].choices[2];
+
+		var score = 0;
+
+		var form = document.getElementById('form');
+		var field = document.getElementById('');
+	</script>
+</body>
+</html>
