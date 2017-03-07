@@ -15,11 +15,12 @@
 			align-items: center;
 			justify-content: center;
 			flex-wrap: wrap;
-			max-width: 800px;
-			margin: 30px auto 0;
+			max-width: 850px;
+			margin: 10px auto;
 			padding: 5px;
 			box-sizing: border-box;
-			border: 1px solid #000;
+			border: 1px solid #cecece;
+			box-shadow: 0px 0px 10px #696969;
 		}
 		.card {
 			display: flex;
@@ -29,19 +30,19 @@
 			width: 130px;
 			height: 130px;
 			margin: 5px;
-			border: 1px solid #000;
 			cursor: pointer;
-			background-color: blue;
+			font-size: 24px;
+			background: url('img/bgcard.png') center no-repeat;
+			border: 2px solid #4d4d4d;
 		}
 		@media screen and (min-width: 768px) {
 			#board{
 				padding: 20px 0;
 			}
 			.card {
-				width: 180px;
-				height: 180px;
+				width: 175px;
+				height: 175px;
 				margin: 5px;
-				border: 1px solid #000;
 			}	
 		}
 	</style>
@@ -57,8 +58,11 @@
 	</nav>
 
 	<section id="board">
-		
 	</section>
+
+	<footer>
+		A W E B i o
+	</footer>
 
 	<script>
 		var card1 = {id: 1, text: "A"},
@@ -126,9 +130,9 @@
 		                    var card1 = document.getElementById(cardsId[0]);
 		                    var card2 = document.getElementById(cardsId[1]);
 		                    card1.innerHTML = "";
-		                    card1.style.background = "blue";
+		                    card1.style.background = "url('img/bgcard.png') center no-repeat";
 		                    card2.innerHTML = "";
-		                    card2.style.background = "blue";
+		                    card2.style.background = "url('img/bgcard.png') center no-repeat";
 		                    values = [];
 		                    cardsId = [];
 		                }
