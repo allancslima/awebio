@@ -106,7 +106,7 @@
 		<a class="btn bgcolor-oncaparda" href="estrutura-humano.html">VOLTAR</a>
 		<div id="quiz" style="width: 100%;">
 			<div id="quiz-header">
-				<h2>Título</h2>
+				<h2>Onça-parda</h2>
 			</div>
 			<div id="quiz-start-screen">
 				<a class="btn bgcolor-oncaparda" href="#" id="quiz-start-btn">Iniciar</a>
@@ -116,46 +116,33 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="http://jchamill.github.io/jquery-quiz/jquery.quiz-min.js"></script>
+
 	<script>
 		var question1 = {
-	 		'q': 'Pergunta 1', 
+	 		'q': 'O crânio de uma onça-parda tem em média de 15 a 23 centímetros e seu osso nasal tem forma convexa?', 
 	 		'options': ['Sim', 'Não'],
 	 		'correctIndex': 0,
-	 		'correctResponse': 'ok',
-	 		'incorrectResponse': 'errouuuu'
+	 		'correctResponse': 'Acertou',
+	 		'incorrectResponse': 'Errou'
 	 		},
 	 		question2 = {
-		 		'q': 'Pergunta 1', 
-		 		'options': ['Sim', 'Não'],
-		 		'correctIndex': 0,
-		 		'correctResponse': 'ok',
-		 		'incorrectResponse': 'errouuuu'
+		 		'q': 'As cores dos pelos das onças-pardas podem variar entre:', 
+		 		'options': ['Castanho ao preto', 'Cinza claro ao marrom-avermelhado'],
+		 		'correctIndex': 1,
+		 		'correctResponse': 'Acertou',
+	 			'incorrectResponse': 'Errou'
 	 		},
 	 		question3 = {
-		 		'q': 'Pergunta 1', 
-		 		'options': ['Sim', 'Não'],
+		 		'q': 'As pernas traseiras da onça-parda são longas, adaptando-se a longos saltos, podendo pular em até:', 
+		 		'options': ['5 m', '3 m'],
 		 		'correctIndex': 0,
-		 		'correctResponse': 'ok',
-		 		'incorrectResponse': 'errouuuu'
-	 		},
-	 		question4 = {
-		 		'q': 'Pergunta 1', 
-		 		'options': ['Sim', 'Não'],
-		 		'correctIndex': 0,
-		 		'correctResponse': 'ok',
-		 		'incorrectResponse': 'errouuuu'
-	 		},
-	 		question5 = {
-		 		'q': 'Pergunta 1', 
-		 		'options': ['Sim', 'Não'],
-		 		'correctIndex': 0,
-		 		'correctResponse': 'ok',
-		 		'incorrectResponse': 'errouuuu'
+		 		'correctResponse': 'Acertou',
+	 			'incorrectResponse': 'Errou'
 	 		};
 
 	 	$('#quiz').quiz({
 		  counterFormat: 'Pergunta %current de %total',
-		  questions: [question1, question2, question3, question4, question5]
+		  questions: [question1, question2, question3]
 		});
 	 </script>
 </div>

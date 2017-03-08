@@ -27,11 +27,14 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
+			text-align: center;
 			width: 130px;
 			height: 130px;
 			margin: 5px;
+			padding: 5px;
+			box-sizing: border-box;
 			background: url('../img/bgcard.png') center no-repeat;
-			font-size: 24px;
+			font-size: 22px;
 			border: 2px solid #4d4d4d;
 			cursor: pointer;
 		}
@@ -64,18 +67,18 @@
 	</footer>
 
 	<script>
-		var card1 = {id: 1, text: "A"},
-			card2 = {id: 1, text: "A"},
-			card3 = {id: 2, text: "B"},
-			card4 = {id: 2, text: "B"},
-			card5 = {id: 3, text: "C"},
-			card6 = {id: 3, text: "C"},
-			card7 = {id: 4, text: "D"},
-			card8 = {id: 4, text: "D"},
-			card9 = {id: 5, text: "E"},
-			card10 = {id: 5, text: "E"},
-			card11 = {id: 6, text: "F"},
-			card12 = {id: 6, text: "F"};
+		var card1 = {id: 1, text: "Nome científico"},
+			card2 = {id: 1, text: "Puma concolor"},
+			card3 = {id: 2, text: "Comprimento"},
+			card4 = {id: 2, text: "Entre 86 e 155 cm"},
+			card5 = {id: 3, text: "Ancestral da onça-parda já habitava a terra"},
+			card6 = {id: 3, text: "Há 8 milhões de anos"},
+			card7 = {id: 4, text: "Resultado de uma divergência que ocorreu na"},
+			card8 = {id: 4, text: "Espécie do jaguarundi"},
+			card9 = {id: 5, text: "Principal período de atividade"},
+			card10 = {id: 5, text: "Período da noite"},
+			card11 = {id: 6, text: "Áreas de vida variam de"},
+			card12 = {id: 6, text: "50 a 1000 km2"};
 			
 		var cards = [card1, card2, card3, card4, card5, card6, card7, card8, card9, card10, card11, card12];
 
@@ -126,7 +129,7 @@
 		                cardsId = [];
 
 		                if (cardsFlipped == cards.length) {
-		                	alert("Congratulations");
+		                	alert("Parabéns!");
 		                	document.getElementById("board").innerHTML = "";
 		                	loadBoard();
 		                }
